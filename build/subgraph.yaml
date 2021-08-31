@@ -1,6 +1,6 @@
 specVersion: 0.0.2
 schema:
-  file: ./schema.graphql
+  file: schema.graphql
 dataSources:
   - kind: ethereum/contract
     name: PollyToken
@@ -16,8 +16,8 @@ dataSources:
         - Transfer
       abis:
         - name: PollyToken
-          file: ./abis/PollyToken.json
+          file: PollyToken/abis/PollyToken.json
       eventHandlers:
         - event: Transfer(indexed address,indexed address,uint256)
           handler: handleTransfer
-      file: ./src/mapping.ts
+      file: PollyToken/PollyToken.wasm
