@@ -5,7 +5,7 @@ import { Burn } from '../generated/schema'
 const genesisAddress = '0x0000000000000000000000000000000000000000'
 
 export function handleTransfer(event: Transfer): void {
-  if (event.transaction.from.toHex() !== genesisAddress)
+  if (event.transaction.to.toHex() !== genesisAddress)
     return;
 
   let entity = Burn.load('0')
