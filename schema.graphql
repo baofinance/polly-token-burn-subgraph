@@ -3,3 +3,8 @@ type Burn @entity {
   burnedTokens: BigInt!
   eventCount: BigInt!
 }
+
+type TokenStats @entity {
+  id: ID!
+  supply: BigInt!
+}
