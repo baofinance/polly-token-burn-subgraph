@@ -6,9 +6,9 @@ dataSources:
     name: PollyToken
     network: matic
     source:
-      address: "0x065f4e71a09d060f349c2840a792189b431945d9"
+      address: "0x4C392822D4bE8494B798cEA17B43d48B2308109C"
       abi: PollyToken
-      startBlock: 18498550
+      startBlock: 18453102 # Polly Token contract created on block #18453103
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.4
